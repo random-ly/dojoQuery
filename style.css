@@ -1,0 +1,21 @@
+h1 {
+	font-size: 1.2em;
+	font-family: arial;
+	text-align: center;
+}
+h2 {
+	font-size: 1.1em;
+	font-family: arial;
+	text-align: center;
+	text-decoration: underline;
+	font-weight: normal;
+}
+.gray {
+    background-color: gray;
+    color: white;
+}
+.centered {
+	padding-top: 25px;
+    text-align: center;
+    margin: 0 auto;
+}

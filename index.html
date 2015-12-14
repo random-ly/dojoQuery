@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dojoQuery assignment</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="dojoquery.js"></script>
+</head>
+<body>
+<h1> dojoQuery library </h1>
+<div class="centered"> 
+	<h2> functionality tests </h2>
+	<p> click the button <br> hover over the button repeatedly</p>
+	<button id="myButton">i'm a button</button> 
+</div>
+<script>
+//set new $dojo object
+var buttonElement = new $Dojo("myButton");
+
+//click actions
+var clickAlert = function() {
+	alert("clickity click");
+}
+buttonElement.click(clickAlert);
+
+//hoveractions
+var changeColor = function() {
+	buttonElement.myId.className = "gray";
+}
+var removeColor = function() {
+	buttonElement.myId.className -= "gray";
+}
+buttonElement.hover(changeColor, removeColor)
+</script>
+</body>
+</html>
